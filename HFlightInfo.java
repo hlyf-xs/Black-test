@@ -1,13 +1,13 @@
 /*
- *ÓÃÓÚºÚºĞ²âÊÔ¡£ 
+ *ç”¨äºé»‘ç›’æµ‹è¯•ã€‚ æ©å‘¢
  */
 public class HFlightInfo {
-	private String m_strID; //º½°àºÅ
-	private String m_strName; //º½°àÃû³Æ
-	private String m_strCompany; //º½¿Õ¹«Ë¾Ãû³Æ
-	private float m_fPrice;  //¼Û¸ñ
-	private int m_nSeat; //×ùÎ»ÊıÄ¿
-    //¹¹Ôìº¯Êı
+	private String m_strID; //èˆªç­å·
+	private String m_strName; //èˆªç­åç§°
+	private String m_strCompany; //èˆªç©ºå…¬å¸åç§°
+	private float m_fPrice;  //ä»·æ ¼
+	private int m_nSeat; //åº§ä½æ•°ç›®
+    //æ„é€ å‡½æ•°
 	public HFlightInfo()
 	{
 		setStrID("");
@@ -16,7 +16,7 @@ public class HFlightInfo {
 		setfPrice(0.0f);
 		setSeat(0);
 	}
-	//ÔÊĞíËùÓĞÊôĞÔÉèÖÃµÄ¹¹Ôìº¯Êı
+	//å…è®¸æ‰€æœ‰å±æ€§è®¾ç½®çš„æ„é€ å‡½æ•°
 	public HFlightInfo(String sid, String sname, String scmy, float  price, int seat)
 	{
 		setStrID(sid);
@@ -26,66 +26,66 @@ public class HFlightInfo {
 		setSeat(seat);
 	}
 	
-	//»ñÈ¡º½¿Õ¹«Ë¾Ãû³Æ
+	//è·å–èˆªç©ºå…¬å¸åç§°
 	public String getStrCompany() {
 		return m_strCompany;
 	}
 	
-	//ÉèÖÃº½¿Õ¹«Ë¾Ãû³Æ
+	//è®¾ç½®èˆªç©ºå…¬å¸åç§°
 	public void setStrCompany(String strCompany) {
 		this.m_strCompany = strCompany;
 	}
 	
-	//»ñÈ¡º½°àÃû³Æ
+	//è·å–èˆªç­åç§°
 	public String getStrName() {
 		return m_strName;
 	}
 	
-	//ÉèÖÃº½°àÃû³Æ
+	//è®¾ç½®èˆªç­åç§°
 	public void setStrName(String strName) {
 		this.m_strName = strName;
 	}
 	
-	//»ñÈ¡º½°àºÅ
+	//è·å–èˆªç­å·
 	public String getStrID() {
 		return m_strID;
 	}
 	
-	//ÉèÖÃº½°àºÅ
+	//è®¾ç½®èˆªç­å·
 	public void setStrID(String strID) {
 		this.m_strID = strID;
 	}
 	
-	//»ñÈ¡¼Û¸ñ
+	//è·å–ä»·æ ¼
 	public float getfPrice() {
 		return m_fPrice;
 	}
 	
-	//ÉèÖÃ¼Û¸ñ
+	//è®¾ç½®ä»·æ ¼
 	public void setfPrice(float fPrice) {
 		this.m_fPrice = fPrice;
 	}
 	
-	//»ñÈ¡×ùÎ»ÊıÄ¿
+	//è·å–åº§ä½æ•°ç›®
 	public int getSeat() {
 		return m_nSeat;//by hehaijiang
 	}
 	
-	//ÉèÖÃ×ùÎ»ÊıÄ¿
+	//è®¾ç½®åº§ä½æ•°ç›®
 	public void setSeat(int nSeat) {
 		this.m_nSeat = nSeat;
 	}
 	
-	//»ñÈ¡º½°àºÅĞÅÏ¢,´ò°üÎª×Ö·û´®
-	//º½°àĞÅÏ¢°üÀ¨£ºº½°àºÅ£¬º½°àÃû³Æ£¬º½¿Õ¹«Ë¾Ãû³Æ£¬¼Û¸ñ£¬×ùÎ»ÊıÄ¿
+	//è·å–èˆªç­å·ä¿¡æ¯,æ‰“åŒ…ä¸ºå­—ç¬¦ä¸²
+	//èˆªç­ä¿¡æ¯åŒ…æ‹¬ï¼šèˆªç­å·ï¼Œèˆªç­åç§°ï¼Œèˆªç©ºå…¬å¸åç§°ï¼Œä»·æ ¼ï¼Œåº§ä½æ•°ç›®
 	public String GetInfo()
 	{
 		StringBuffer sbInfo = new StringBuffer();
-		sbInfo.append("º½°àºÅ:"+ m_strID+", ");
-		sbInfo.append("º½°àÃû³Æ:"+m_strName+", ");
-		sbInfo.append("º½¿Õ¹«Ë¾Ãû³Æ:"+m_strCompany+", ");
-		sbInfo.append("¼Û¸ñ:"+String.valueOf(m_fPrice)+", ");
-		sbInfo.append("×ùÎ»ÊıÄ¿:"+String.valueOf(m_nSeat));
+		sbInfo.append("èˆªç­å·:"+ m_strID+", ");
+		sbInfo.append("èˆªç­åç§°:"+m_strName+", ");
+		sbInfo.append("èˆªç©ºå…¬å¸åç§°:"+m_strCompany+", ");
+		sbInfo.append("ä»·æ ¼:"+String.valueOf(m_fPrice)+", ");
+		sbInfo.append("åº§ä½æ•°ç›®:"+String.valueOf(m_nSeat));
 		return sbInfo.toString();
 	}
 }
